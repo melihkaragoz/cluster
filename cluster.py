@@ -13,7 +13,7 @@ while (1):
 	else:
 		fr.close()
 		break
-
+os.mkdir("photos")
 os.chdir("./photos")
 try:
 	for user in users:

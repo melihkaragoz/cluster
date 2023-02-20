@@ -23,5 +23,5 @@ for url in d:
 	new_image.paste(image1,(width,int(pc_height/2)-200))
 	width += int(pc_width/len(d))
 
-new_image.save("kolaj.jpg","JPEG")
+new_image.save("collage.jpg","JPEG")
 os.system("bash ./changeBackground.sh")
