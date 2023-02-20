@@ -1,7 +1,7 @@
-NOTE
----------------------
-don't forget to create "photos" folder
----------------------
+NOTE 
+----------------------
+access token's expire date is 2hr later from when it's created.
+----------------------
 
 installing
 ----------------------
