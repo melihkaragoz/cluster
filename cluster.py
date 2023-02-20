@@ -35,4 +35,5 @@ except:
 for u in available:
 	wget.download(f"{u['img']}")
 
-#os.system("python3 collage.py")
+os.chdir("../")
+os.system("python3 collage.py")
