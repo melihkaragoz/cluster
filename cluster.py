@@ -1,5 +1,7 @@
 import json,os,wget
+import ssl
 
+ssl._create_default_https_context = ssl._create_unverified_context
 users = ["mkaragoz","makbulut","mdiraga"]
 available = []
 os.chdir("./photos")

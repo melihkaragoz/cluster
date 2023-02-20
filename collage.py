@@ -16,4 +16,4 @@ for url in d:
 	width += 200
 
 new_image.save("kolaj.jpg","JPEG")
-new_image.show()
+os.system("bash ./changeBackground.sh")
