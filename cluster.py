@@ -3,8 +3,12 @@ import ssl
 from time import sleep
 
 t = open("token.txt","r")
-tokenFile = json.load(t)
-accessToken = tokenFile["access_token"]
+try:
+	tokenFile = json.load(t)
+	accessToken = tokenFile["access_token"]
+except:
+	print("token is invalid, please run 'generateAccessToken.sh' script.")
+	exit()
 ssl._create_default_https_context = ssl._create_unverified_context
 users = []
 available = []
