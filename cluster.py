@@ -3,8 +3,17 @@ import ssl
 
 accessToken = "90b9270743f040399efb572dbd71522df41622ab517d59cb20906bcbaf65ad6d"
 ssl._create_default_https_context = ssl._create_unverified_context
-users = ["mkaragoz","makbulut","mdiraga"]
+users = []
 available = []
+fr = open("friends.txt","r")
+while (1):
+	us = fr.readline().split("\n")[0]
+	if (us != ''):
+		users.append(us)
+	else:
+		fr.close()
+		break
+
 os.chdir("./photos")
 try:
 	for user in users:
