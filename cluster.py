@@ -3,7 +3,8 @@ import ssl
 from time import sleep
 
 t = open("token.txt","r")
-accessToken = t.readline()
+tokenFile = json.load(t)
+accessToken = tokenFile["access_token"]
 ssl._create_default_https_context = ssl._create_unverified_context
 users = []
 available = []
@@ -15,7 +16,10 @@ while (1):
 	else:
 		fr.close()
 		break
-os.mkdir("photos")
+try:
+	os.mkdir("photos")
+except:
+	pass
 os.chdir("./photos")
 try:
 	for user in users:
