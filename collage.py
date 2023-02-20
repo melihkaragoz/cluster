@@ -2,8 +2,8 @@ import os
 from PIL import Image
 
 
-pc_width = 1120
-pc_height = 880
+pc_width = 5120
+pc_height = 2880
 os.system("ls photos/*.jpg > ./photos/urls")
 f = open("./photos/urls","r")
 d = f.read()
