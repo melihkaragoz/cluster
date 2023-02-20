@@ -3,6 +3,7 @@ import ssl
 from time import sleep
 
 while(1):
+	os.system("rm photos/*.jpg")
 	t = open("token.txt","r")
 	try:
 		tokenFile = json.load(t)
@@ -54,4 +55,4 @@ while(1):
 
 	os.chdir("../")
 	os.system("python3 collage.py")
-	sleep(120)
+	sleep(600)
