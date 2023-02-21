@@ -11,4 +11,3 @@
 pip3 install wget<br>
 pip3 install Pillow<br>
 
-![example](https://github.com/melihkaragoz/cluster/blob/main/photos/cluster.png)
