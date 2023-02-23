@@ -10,9 +10,8 @@ while(1):
 		accessToken = tokenFile["access_token"]
 	except:
 		print("token is invalid, running 'generateAccessToken.sh' script, please wait...")
-		os.system("./generateAccessToken")
+		os.system("./generateAccessToken.sh")
 		continue
-
 	ssl._create_default_https_context = ssl._create_unverified_context
 	users = []
 	available = []
